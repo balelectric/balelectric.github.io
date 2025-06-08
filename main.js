@@ -94,6 +94,6 @@ function close_menu()
 
 
 
-link_content.innerHTML = '<a href="https://youtube.com/@balbalmusic"><li>Music</li></a><a href="/artist.html"><li>Artists</li></a>';
+link_content.innerHTML = '<a href="https://youtube.com/@balbalmusic"><li>Music</li></a><a href="/artists.html"><li>Artists</li></a>';
 link_content_menu.innerHTML = '<ul style="list-style: none;/*! text-align: center; *//*! display: inline-block; */vertical-align: -20%;"><a href="/index.html" style="color: rgb(0, 0, 0);"><li style="/*! float: left; */padding-right: 20px;">ホーム</li></a><a href="https://youtube.com/@balbalmusic" style="color: rgb(0, 0, 0);"><li style="/*! float: left; */padding-right: 20px;">ミュージック</li></a><a href="/artist.html" style="color: rgb(0, 0, 0);"><li style="/*! float: left; */padding-right: 20px;">アーティスト</li></a></ul>';
 
