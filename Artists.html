@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Artists - Balelectric</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link rel="shortcut icon" sizes="64x64" href="https://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/balelectric.png">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="fonts.css">
+  <link rel="stylesheet" type="text/css" href="slider.css">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ナビゲーション */
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1000;
+    }
+
+    #header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    #logo {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    #menu_svg svg {
+      margin-right: 10px;
+    }
+
+    #logo_img img {
+      height: 28px;
+    }
+
+    /* アーティスト一覧 */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .artists {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+.artist-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;  /* 下線なし */
+  color: inherit;         /* 親要素の文字色を引き継ぐ（白など） */
+  display: block;         /* aタグをブロック要素に */
+}
+
+
+    .artist-card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .artist-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .artist-card img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav>
+    <div id="header_content">
+      <div id="logo" onclick="open_menu()">
+        <span id="menu_svg">
+          <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z" fill="#0F0F0F"/>
+            <path d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z" fill="#0F0F0F"/>
+            <path d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z" fill="#0F0F0F"/>
+          </svg>
+        </span>
+        <span id="logo_img">
+          <img src="https://raw.githubusercontent.com/balelectric/balelectric.github.io/d584bfa76e955b9ab09ec4b1b70cb32acc2ee780/img/logo.svg" alt="Balelectric">
+        </span>
+      </div>
+      <ul id="link_content">
+        <!-- ナビゲーションリンクをここに追加 -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- アーティスト一覧 -->
+  <div class="container">
+    <h1>Artists & Tallents</h1>
+    <p>所属しているアーティストとタレントを紹介します</p>
+<div class="artists">
+  <a class="artist-card" href="https://balelectric.f5.si/prof.html">
+    <img src="https://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89.jpg" alt="Matsunoki">
+    <div class="artist-name">Matsunoki</div><p>音楽プロデューサー</p>
+  </a>
+
+  <a class="artist-card" href="sousuke.html">
+    <img src="https://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/IMG_0613.JPG" alt="そうすけ">
+    <div class="artist-name">そうすけ</div><p>お笑いタレント</p>
+  </a>
+
+  <a class="artist-card" href="team_dappikani.html">
+    <img src="https://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/IMG_0595.jpg" alt="チーム脱皮蟹">
+    <div class="artist-name">チーム脱皮蟹</div><p>お笑いユニット</p>
+  </a>
+
+  <a class="artist-card" href="totsu.html">
+    <img src="http://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/NO%20IMAGE.png" alt="凸">
+    <div class="artist-name">凸</div><p>お笑いタレント</p>
+  </a>
+
+  <a class="artist-card" href="kitaharu.html">
+    <img src="http://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/NO%20IMAGE.png" alt="北ハル">
+    <div class="artist-name">北ハル</div><p>お笑いタレント</p>
+  </a>
+
+    <a class="artist-card" href="aiku.html">
+    <img src="http://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/NO%20IMAGE.png" alt="EnterRisu">
+    <div class="artist-name">EnterRisu</div><p>DJ</p>
+  </a>
+
+      <a class="artist-card" href="aiku.html">
+    <img src="http://raw.githubusercontent.com/balelectric/balelectric.github.io/refs/heads/main/img/NO%20IMAGE.png" alt="あいく">
+    <div class="artist-name">あいく</div><p>お笑いタレント</p>
+  </a>
+</div>
+
+</body>
+</html>
